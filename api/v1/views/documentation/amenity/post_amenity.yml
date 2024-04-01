@@ -1,9 +1,9 @@
-    Posts a new state.
+    Links an amenity object to a place
     ---
     tags:
-      - States
+      - Amenities
     parameters:
-      - name: request
+      - name: amenity_id
         in: body
         required: true
         requires:
@@ -14,6 +14,6 @@
 
     responses:
       400:
-        description: Missing name or Not Valid JSON
+        description: Not a JSON
       201:
-        description: Request completed successfully
+        description: request executed successfully
